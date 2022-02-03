@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Contact
+        style 
+            include style.css
+    body 
+        include ./Header.pug
+        div.container
+          if(open===true)
+            h1 Welcome to ContactUs section
+            img(src="https://w7.pngwing.com/pngs/797/306/png-transparent-eventloop-service-information-machining-marketing-contact-us-miscellaneous-blue-text-thumbnail.png" alt="")
+            h3 your request to logIn is accepted on day #{dayOn}, hour #{hourOn}:00
+          else 
+            h1 Sorry We'are closed!
+            p The web application is only available during working hours (Monday to Friday,  from 9 to 17).
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMibTp_2G2fgYuRzmfqfIzgIH_TG36WszLzw&usqp=CAU" alt="")
+        include ./Footer.pug
